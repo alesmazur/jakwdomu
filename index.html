@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" type="image/png" href="assets/img/icon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800"
       rel="stylesheet"
     />
-    <title>JakDoma.pl|eDawednik</title>
+    <title>Jak W Domu | e-Prawnik</title>
   </head>
   <body>
     <div class="wrapper">
@@ -20,17 +20,16 @@
           <div class="header__content">
             <div class="header__logo">
               <a class="logo" href="/">
-                <img src="assets/img/logo.svg" alt="logo" />
-                <div class="header__logo--text">Pomoc dla uchodźców</div>
+                <img src="assets/img/new__full_logo.svg" alt="logo" />
               </a>
             </div>
-            <div class="header__menu">
+            <nav class="header__menu">
               <a class="menu__item" href="#">Pol</a>
               <a class="menu__item" href="#">Rus</a>
               <a class="menu__item" href="#">Bel</a>
               <a class="menu__item" href="#">Ukr</a>
               <a class="menu__item" href="#">Eng</a>
-            </div>
+            </nav>
             <div class="switcher toggle-down" onclick="toggle()">
               <a href="#">
                 <img src="assets/img/switch.svg" alt="switch__button"
@@ -43,20 +42,29 @@
       <!--Main-->
       <main class="main">
         <div class="container">
-          <div class="main__left">
-            <ul class="main__nav">
-              <li class="left__item"></li>
-              
-          </div>
-          <div class="main__right">
-            <div class="main__content"></div>
+          <div class="main__inner">
+            <div class="sidebar">
+              <ul class="sidebar__list">
+                <a href="#"> <li class="side__item">Главаная ipsum</li></a>
+                <a href="#"> <li class="side__item">Lorem ipsum</li></a>
+                <a href="#"> <li class="side__item">Lorem ipsum</li></a>
+                <a href="#"> <li class="side__item">Lorem ipsum</li></a>
+                <a href="#"> <li class="side__item">Lorem ipsum</li></a>
+                <a href="#"> <li class="side__item">Lorem ipsum</li></a>
+              </ul>
+            </div>
+            <div class="main__right">
+              <div class="main__content"></div>
+            </div>
           </div>
         </div>
       </main>
       <!--Footer-->
       <footer class="footer">
         <div class="container">
-          <a class="footer__link" href="#">site@yahoo.com</a>
+          <div class="footer__inner">
+            <a class="footer__link" href="#">site@yahoo.com</a>
+          </div>
         </div>
       </footer>
     </div>
