@@ -10,3 +10,10 @@ function toggle() {
     switcher.className = switcher.className.replace(upClass, downClass);
   }
 }
+
+$(document).ready(function () {
+  $(".switcher").on("click", function (event) {
+    event.preventDefault();
+    $(".wrapper").toggleClass("dark");
+  });
+});

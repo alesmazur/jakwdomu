@@ -1,112 +1,95 @@
-/********* Reset **********/
-html {
-  box-sizing: border-box;
+body {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  cursor: default;
+}
+
+.wrapper.dark > * {
+  color: #fff !important;
+  background-color: rgb(34, 30, 30);
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: "Montserrat";
-  font-size: 16px;
-  color: #000;
-}
-
-html,
-body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ol,
-ul,
-li {
+h6 {
   margin: 0;
-  padding: 0;
-  font-weight: inherit;
-  font-size: inherit;
-  height: 100%;
-  line-height: inherit;
-  list-style: none;
-}
-a {
-  text-decoration: none;
 }
 
+p {
+  margin: 0 0 10px;
+}
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+.a {
+  style: none;
+  color: inherit;
+}
 /********* Wrapper **********/
 .wrapper {
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap;
   flex-direction: column;
-  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 /********* Container **********/
 [class*="__container"] {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  height: auto;
-  /* background-color: grey; */
-}
-/* PC */
-@media (max-width: 1200px) {
-  [class*="__container"] {
-    max-width: 970px;
-  }
-}
-/* Tablet */
-@media (max-width: 991px) {
-  [class*="__container"] {
-    max-width: 750px;
-  }
-}
-/* Mobile */
-@media (max-width: 767px) {
-  [class*="__container"] {
-    max-width: none;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 479.98px) {
 }
 
 /********* Header **********/
 .header {
-  position: absolute;
-  width: 100%;
-  min-width: 1600px;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  display: block;
   border-bottom: 2px solid #dc143c;
 }
 .header__container {
   display: flex;
   min-height: 100px;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 135px;
-}
-.header__logo {
-  margin-left: -135px;
-}
-.switcher {
-  margin-right: 135px;
+  justify-content: space-around;
+  padding: 15px auto;
 }
 
 /********* Nav **********/
+
+.header__logo {
+  width: 50px;
+  overflow: hidden;
+}
+
+.logo__text {
+  color: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: -120px;
+}
+
 .menu__item {
   text-decoration: none;
-  color: #000;
+  color: inherit;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
@@ -124,12 +107,27 @@ a {
 .menu__item:not(:last-child):after {
   margin-left: 2px;
   content: "/";
-  color: black;
+  color: inherit;
   font-weight: 500;
 }
 
-.switcher {
+switcher {
   transition: all 0.75s 0.25s ease;
+  border-radius: 50%;
+}
+.wrapper.dark .switcher {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wrapper.dark .switcher img {
+  height: 110%;
+  width: auto;
+}
+
+switcher:focus {
+  outline: none;
 }
 .toggle-down {
   transform: scaleX(-1);
@@ -140,13 +138,11 @@ a {
 }
 /********* Main **********/
 .main {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: row;
-  margin-top: 102px;
+  display: block;
 }
 .main__inner {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: row;
   height: 100%;
 }
@@ -166,7 +162,7 @@ a {
   text-align: left;
 }
 .side__item {
-  color: #000;
+  color: inherit;
   text-decoration: none;
   font-family: Montserrat;
   font-size: 20px;
@@ -248,6 +244,7 @@ span {
 
 .button:hover {
   text-decoration: underline;
+  background-color: #ee3157;
 }
 /********* Footer **********/
 .footer {
