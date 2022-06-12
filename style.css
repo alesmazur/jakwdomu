@@ -116,14 +116,17 @@ switcher {
   border-radius: 50%;
 }
 .wrapper.dark .switcher {
-  background: #fff;
   overflow: hidden;
   border-radius: 50%;
-  overflow: hidden;
+  width: 25px;
+  height: auto;
 }
 .wrapper.dark .switcher img {
-  height: 110%;
-  width: auto;
+  display: block;
+  transform: translate3d(0, 0, 0);
+  background-color: #fff;
+  width: 25px;
+  height: auto;
 }
 
 switcher:focus {
@@ -139,6 +142,7 @@ switcher:focus {
 /********* Main **********/
 .main {
   display: block;
+  border-bottom: 1px solid #dc143c;
 }
 .main__inner {
   display: flex;
