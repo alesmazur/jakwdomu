@@ -22,7 +22,7 @@
             <img class="logo__img" src="assets/img/icon.png" alt="logo" />
             <div class="logo__text">Jak w Domu</div>
           </a>
-
+          <!-- Menu -->
           <div class="header__menu menu">
             <nav class="menu">
               <a class="menu__item" href="#">Pol</a>
@@ -32,6 +32,14 @@
               <a class="menu__item" href="#">Eng</a>
             </nav>
           </div>
+
+          <!-- Burger -->
+          <button class="nav__toggle" id="nav__toggle" type="button">
+            <span class="toggle__item">Menu</span>
+          </button>
+
+          <!-- Switcher -->
+
           <div class="switcher toggle-down" onclick="toggle()">
             <img src="assets/img/switch.svg" alt="switch__button"
           </div>
@@ -61,7 +69,8 @@
                   Witamy w <span class="main__span">Polsce!</span>
                 </h1>
                 <h2 class="main__subtitle">
-                  Pomocnik - Podręcznik dla uchodźców
+                  Pomocnik - Podręcznik
+                  <span class="main__span">dla uchodźców</span>
                 </h2>
 
                 <a class="main__button" href="#">Wsparcie</a>
@@ -79,10 +88,10 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__inner">
+            <a class="footer__link" href="#">site@yahoo.com</a>
             <a class="footer__eye" href="#"
               ><img src="assets/img/eye__footer.svg" alt="disabled_eye_mode"
             /></a>
-            <a class="footer__link" href="#">site@yahoo.com</a>
           </div>
         </div>
       </footer>

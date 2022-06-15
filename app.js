@@ -16,4 +16,11 @@ $(document).ready(function () {
     event.preventDefault();
     $(".wrapper").toggleClass("dark");
   });
+
+  // Burger toggle
+  $("#nav__toggle").on("click", function (event) {
+    event.preventDefault();
+
+    $(this).toggleClass("active");
+  });
 });
