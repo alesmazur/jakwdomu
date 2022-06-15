@@ -22,5 +22,6 @@ $(document).ready(function () {
     event.preventDefault();
 
     $(this).toggleClass("active");
+    $(".header__menu").toggleClass("show");
   });
 });

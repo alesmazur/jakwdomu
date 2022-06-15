@@ -49,7 +49,7 @@ li {
 .wrapper {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
   min-height: 100vh;
@@ -483,5 +483,36 @@ side__item:hover.side__item:before {
   .nav__toggle {
     display: block;
     right: 20%;
+  }
+
+  .header__container {
+    position: relative;
+  }
+  .header__menu.show {
+    display: block;
+    flex-direction: column;
+    height: 500px;
+    width: 50%;
+    position: absolute;
+    top: 103%;
+    right: 0;
+    z-index: 100;
+    align-items: center;
+    background: #fff;
+  }
+  .wrapper.dark .header__menu.show {
+    background: #000;
+  }
+  .header__menu.show .menu {
+    display: flex;
+    flex-direction: column;
+
+    height: 70%;
+    margin: 10px auto;
+    justify-content: space-around;
+  }
+  .header__menu.show .menu__item:before,
+  .header__menu.show .menu__item:after {
+    content: "";
   }
 }
